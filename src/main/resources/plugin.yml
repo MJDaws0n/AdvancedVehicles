@@ -1,0 +1,34 @@
+name: AdvancedVehicles
+version: '${project.version}'
+main: me.mjdawson.advancedvehicles.AdvancedVehicles
+api-version: 1.19
+prefix: AdvancedVehicles
+authors: [ MJDawson ]
+description: Incredible vehicles without mods!!
+website: https://youtube.com/mjdawson
+permissions:
+  plane.move.hidden:
+    default: true
+  plane.remove:
+    default: op
+  plane.stop:
+    default: op
+commands:
+  plane:
+    description: Summons a plane to your locaition
+    usage: /plane <type>
+  moveplane:
+    description: Not a command a player can run
+    permission: plane.move.hidden
+    permission-message: Unknown command. Type "/help" for help
+    usage: /moveplane
+  removeplane:
+    description: Removes the plane
+    permission: plane.remove
+    permission-message: §bBruu! I think not
+    usage: /removeplane
+  stopmovingplane:
+    description: Stops the plane from moving
+    permission: plane.stop
+    permission-message: §bBruu! I think not
+    usage: /stopmovingplane
