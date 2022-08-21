@@ -810,10 +810,10 @@ public class removePlane implements CommandExecutor {
         Bukkit.dispatchCommand(player, "execute at @e[tag=plane] run setblock ~ ~-2 ~17 air");
         Bukkit.dispatchCommand(player, "execute at @e[tag=plane] run setblock ~ ~-2 ~18 air");
         Bukkit.dispatchCommand(player, "execute at @e[tag=plane] run setblock ~ ~-2 ~19 air");
-        Bukkit.dispatchCommand(player, "execute at @e[tag=plane] run setblock ~6 ~-3 ~8 end_rod{BlockState:{Properties:{facing:\" , down\" , },Name:end_rod},Time:1,NoGravity:1b,Tags:[permanent]}");
-        Bukkit.dispatchCommand(player, "execute at @e[tag=plane] run setblock ~6 ~-3 ~10 end_rod{BlockState:{Properties:{facing:\" , down\" , },Name:end_rod},Time:1,NoGravity:1b,Tags:[permanent]}");
-        Bukkit.dispatchCommand(player, "execute at @e[tag=plane] run setblock ~-6 ~-3 ~8 end_rod{BlockState:{Properties:{facing:\" , down\" , },Name:end_rod},Time:1,NoGravity:1b,Tags:[permanent]}");
-        Bukkit.dispatchCommand(player, "execute at @e[tag=plane] run setblock ~-6 ~-3 ~10 end_rod{BlockState:{Properties:{facing:\" , down\" , },Name:end_rod},Time:1,NoGravity:1b,Tags:[permanent]}");
+        Bukkit.dispatchCommand(player, "execute at @e[tag=plane] run setblock ~6 ~-3 ~8 air");
+        Bukkit.dispatchCommand(player, "execute at @e[tag=plane] run setblock ~6 ~-3 ~10 air");
+        Bukkit.dispatchCommand(player, "execute at @e[tag=plane] run setblock ~-6 ~-3 ~8 air");
+        Bukkit.dispatchCommand(player, "execute at @e[tag=plane] run setblock ~-6 ~-3 ~10 air");
         Bukkit.dispatchCommand(player, "execute at @e[tag=plane] run setblock ~ ~1 ~-3 air");
         Bukkit.dispatchCommand(player, "execute at @e[tag=plane] run setblock ~-1 ~ ~3 air");
         Bukkit.dispatchCommand(player, "execute at @e[tag=plane] run setblock ~2 ~ ~1 air");

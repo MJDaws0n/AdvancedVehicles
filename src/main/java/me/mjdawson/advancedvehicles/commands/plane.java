@@ -850,6 +850,7 @@ public class plane implements CommandExecutor {
             Bukkit.dispatchCommand(player, "execute at " + player.getDisplayName() + " run setblock ~-12 ~-2 ~17 minecraft:iron_block");
             Bukkit.dispatchCommand(player, "execute at " + player.getDisplayName() + " run setblock ~ ~-2 ~21 minecraft:iron_block");
             Bukkit.dispatchCommand(player, "execute at " + player.getDisplayName() + " run setblock ~-2 ~ ~21 minecraft:iron_block");
+            Bukkit.dispatchCommand(player, "execute at " + player.getDisplayName() + " run fill ~2 ~ ~2 ~2 ~1 ~3 minecraft:iron_block");
 
             Bukkit.dispatchCommand(player, "execute at " + player.getDisplayName() + " run fill ~1 ~-1 ~20 ~-1 ~3 ~21 minecraft:iron_block");
 
@@ -872,8 +873,8 @@ public class plane implements CommandExecutor {
 
 
             Bukkit.dispatchCommand(player, "execute at " + player.getDisplayName() + " run summon minecraft:armor_stand ~ ~ ~ {ShowArms:1b,Invisible:1b,DisabledSlots:4144959,CustomName:'[{\"text\":\"Plane\"}]',CustomNameVisible:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,Tags:[plane]}");
-            Bukkit.dispatchCommand(player, "execute at @e[tag=plane] run summon armor_stand ~3 ~ ~3 {UUID:[I;456745376,456756745,356735675,536735687],NoGravity:0b,Silent:1b,Invulnerable:1b,Invisible:1b,Rotation:[90F,0F]}");
-            Bukkit.dispatchCommand(player, "execute at @e[tag=plane] run summon armor_stand ~3 ~ ~2 {UUID:[I;446745376,456756745,356735675,536735687],NoGravity:0b,Silent:1b,Invulnerable:1b,Invisible:1b,Rotation:[90F,0F]}");
+            Bukkit.dispatchCommand(player, "execute at @e[tag=plane] run summon armor_stand ~3 ~ ~3 {UUID:[I;456745376,456756745,356735675,536735687],NoGravity:0b,Silent:1b,Invulnerable:1b,Invisible:1b,Rotation:[90F,0F]CustomNameVisible:1b,CustomName:'[{\"text\":\"Press \"},{\"keybind\":\"key.use\"},{\"text\":\" To enter the plane\"}]'}");
+            Bukkit.dispatchCommand(player, "execute at @e[tag=plane] run summon armor_stand ~3 ~ ~2 {UUID:[I;446745376,456756745,356735675,536735687],NoGravity:0b,Silent:1b,Invulnerable:1b,Invisible:1b,Rotation:[90F,0F]CustomNameVisible:1b,CustomName:'[{\"text\":\"Press \"},{\"keybind\":\"key.use\"},{\"text\":\" To enter the plane\"}]'}");
             Bukkit.dispatchCommand(player, "execute at " + player.getDisplayName() + " run tp ~ ~-6 ~");
             tempWorld.setGameRule(GameRule.SEND_COMMAND_FEEDBACK, gameRuleSEND_COMMAND_FEEDBACK);
             tempWorld.setGameRule(GameRule.LOG_ADMIN_COMMANDS, gameRuleLOG_ADMIN_COMMANDS);
