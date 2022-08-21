@@ -26,7 +26,7 @@ public class moveplane implements CommandExecutor {
                 tempWorld.setGameRule(GameRule.SEND_COMMAND_FEEDBACK, false);
                 tempWorld.setGameRule(GameRule.LOG_ADMIN_COMMANDS, false);
                 Bukkit.dispatchCommand(player, "execute at @e[tag=plane] run clone ~-17 ~-7 ~28 ~17 ~8 ~-3 ~-17 ~-7 ~-4 replace move");
-                Bukkit.dispatchCommand(player, "execute at " + player.getDisplayName() + " run tp ~ ~ ~-1");
+                Bukkit.dispatchCommand(player, "execute at @e[tag=InPlane] run tp ~ ~ ~-1");
                 Bukkit.dispatchCommand(player, "execute at @e[tag=plane] as @e[tag=plane] run tp ~ ~ ~-1");
                 AdvancedVehicles.scheduleSyncDelayedTask(new Runnable(){
                     public void run(){
@@ -45,7 +45,7 @@ public class moveplane implements CommandExecutor {
                 tempWorld.setGameRule(GameRule.SEND_COMMAND_FEEDBACK, false);
                 tempWorld.setGameRule(GameRule.LOG_ADMIN_COMMANDS, false);
                 Bukkit.dispatchCommand(player, "execute at @e[tag=plane] run clone ~-17 ~-7 ~28 ~17 ~8 ~-3 ~-17 ~-7 ~-4 replace move");
-                Bukkit.dispatchCommand(player, "execute at " + player.getDisplayName() + " run tp ~ ~ ~-1");
+                Bukkit.dispatchCommand(player, "execute at @e[tag=InPlane] run tp ~ ~ ~-1");
                 Bukkit.dispatchCommand(player, "execute at @e[tag=plane] as @e[tag=plane] run tp ~ ~ ~-1");
                 AdvancedVehicles.scheduleSyncDelayedTask(new Runnable(){
                     public void run(){
