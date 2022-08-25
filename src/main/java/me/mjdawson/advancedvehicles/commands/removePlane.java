@@ -863,9 +863,11 @@ public class removePlane implements CommandExecutor {
         Bukkit.dispatchCommand(player, "execute at @e[tag=plane] run fill ~7 ~-4 ~2 ~8 ~-4 ~3 air");
         Bukkit.dispatchCommand(player, "execute at @e[tag=plane] run fill ~8 ~-5 ~2 ~9 ~-5 ~3 air");
         Bukkit.dispatchCommand(player, "execute at @e[tag=plane] run fill ~9 ~-6 ~2 ~10 ~-6 ~3 air");
-        Bukkit.dispatchCommand(player, "execute at @e[tag=plane] run kill @e[tag=plane]");
-        Bukkit.dispatchCommand(player, "execute at @e[tag=plane] run kill 1b3961a0-1b39-8e09-1543-5abb1ffdefc7");
-        Bukkit.dispatchCommand(player, "execute at @e[tag=plane] run kill 1aa0cb20-1b39-8e09-1543-5abb1ffdefc7");
+        Bukkit.dispatchCommand(player, "kill 1b3961a0-1b39-8e09-1543-5abb1ffdefc7");
+        Bukkit.dispatchCommand(player, "kill 1aa0cb20-1b39-8e09-1543-5abb1ffdefc7");
+        Bukkit.dispatchCommand(player, "kill 1a0834a0-1b39-8e09-1543-5abb1ffdefc7");
+        Bukkit.dispatchCommand(player, "kill 196f9e20-1b39-8e09-1543-5abb1ffdefc7");
+        Bukkit.dispatchCommand(player, "kill @e[tag=plane]");
         tempWorld.setGameRule(GameRule.SEND_COMMAND_FEEDBACK, gameRuleSEND_COMMAND_FEEDBACK);
         tempWorld.setGameRule(GameRule.LOG_ADMIN_COMMANDS, gameRuleLOG_ADMIN_COMMANDS);
         sender.sendMessage("§bPlane Removed");

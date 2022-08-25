@@ -28,6 +28,10 @@ public class moveplane implements CommandExecutor {
                 Bukkit.dispatchCommand(player, "execute at @e[tag=plane] run clone ~-17 ~-7 ~28 ~17 ~8 ~-3 ~-17 ~-7 ~-4 replace move");
                 Bukkit.dispatchCommand(player, "execute at @e[tag=InPlane] run tp ~ ~ ~-1");
                 Bukkit.dispatchCommand(player, "execute at @e[tag=plane] as @e[tag=plane] run tp ~ ~ ~-1");
+                Bukkit.dispatchCommand(player, "execute at 1b3961a0-1b39-8e09-1543-5abb1ffdefc7 as 1b3961a0-1b39-8e09-1543-5abb1ffdefc7 run tp ~ ~ ~-1");
+                Bukkit.dispatchCommand(player, "execute at 1aa0cb20-1b39-8e09-1543-5abb1ffdefc7 as 1aa0cb20-1b39-8e09-1543-5abb1ffdefc7 run tp ~ ~ ~-1");
+                Bukkit.dispatchCommand(player, "execute at 1a0834a0-1b39-8e09-1543-5abb1ffdefc7 as 1a0834a0-1b39-8e09-1543-5abb1ffdefc7 run tp ~ ~ ~-1");
+                Bukkit.dispatchCommand(player, "execute at 196f9e20-1b39-8e09-1543-5abb1ffdefc7 as 196f9e20-1b39-8e09-1543-5abb1ffdefc7 run tp ~ ~ ~-1");
                 AdvancedVehicles.scheduleSyncDelayedTask(new Runnable(){
                     public void run(){
                         Bukkit.dispatchCommand(player, "moveplane");
@@ -47,6 +51,10 @@ public class moveplane implements CommandExecutor {
                 Bukkit.dispatchCommand(player, "execute at @e[tag=plane] run clone ~-17 ~-7 ~28 ~17 ~8 ~-3 ~-17 ~-7 ~-4 replace move");
                 Bukkit.dispatchCommand(player, "execute at @e[tag=InPlane] run tp ~ ~ ~-1");
                 Bukkit.dispatchCommand(player, "execute at @e[tag=plane] as @e[tag=plane] run tp ~ ~ ~-1");
+                Bukkit.dispatchCommand(player, "execute at 1b3961a0-1b39-8e09-1543-5abb1ffdefc7 as 1b3961a0-1b39-8e09-1543-5abb1ffdefc7 run tp ~ ~ ~-1");
+                Bukkit.dispatchCommand(player, "execute at 1aa0cb20-1b39-8e09-1543-5abb1ffdefc7 as 1aa0cb20-1b39-8e09-1543-5abb1ffdefc7 run tp ~ ~ ~-1");
+                Bukkit.dispatchCommand(player, "execute at 1a0834a0-1b39-8e09-1543-5abb1ffdefc7 as 1a0834a0-1b39-8e09-1543-5abb1ffdefc7 run tp ~ ~ ~-1");
+                Bukkit.dispatchCommand(player, "execute at 196f9e20-1b39-8e09-1543-5abb1ffdefc7 as 196f9e20-1b39-8e09-1543-5abb1ffdefc7 run tp ~ ~ ~-1");
                 AdvancedVehicles.scheduleSyncDelayedTask(new Runnable(){
                     public void run(){
                         Bukkit.dispatchCommand(player, "moveplane");

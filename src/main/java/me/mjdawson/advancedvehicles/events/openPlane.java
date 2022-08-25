@@ -42,6 +42,32 @@ public class openPlane implements Listener {
                     tempWorld.setGameRule(GameRule.SEND_COMMAND_FEEDBACK, gameRuleSEND_COMMAND_FEEDBACK);
                     tempWorld.setGameRule(GameRule.LOG_ADMIN_COMMANDS, gameRuleLOG_ADMIN_COMMANDS);
                 }
+                if (openPlane.checkEquals(event.getRightClicked().getUniqueId(), UUID.fromString("1a0834a0-1b39-8e09-1543-5abb1ffdefc7"))) {
+                    World world = (World) Bukkit.getWorld("world");
+                    World tempWorld = Bukkit.getWorld("world");
+                    boolean gameRuleSEND_COMMAND_FEEDBACK = tempWorld.getGameRuleValue(GameRule.SEND_COMMAND_FEEDBACK);
+                    boolean gameRuleLOG_ADMIN_COMMANDS = tempWorld.getGameRuleValue(GameRule.LOG_ADMIN_COMMANDS);
+                    tempWorld.setGameRule(GameRule.SEND_COMMAND_FEEDBACK, false);
+                    tempWorld.setGameRule(GameRule.LOG_ADMIN_COMMANDS, false);
+                    event.getPlayer().sendMessage("§bExited Plane");
+                    Bukkit.dispatchCommand(event.getPlayer(), "execute at @e[tag=plane] run tp " + event.getPlayer().getDisplayName() + " ~3 ~ ~3");
+                    Bukkit.dispatchCommand(event.getPlayer(), "execute at " + event.getPlayer().getDisplayName() + " run tag @s remove InPlane");
+                    tempWorld.setGameRule(GameRule.SEND_COMMAND_FEEDBACK, gameRuleSEND_COMMAND_FEEDBACK);
+                    tempWorld.setGameRule(GameRule.LOG_ADMIN_COMMANDS, gameRuleLOG_ADMIN_COMMANDS);
+                }
+                if (openPlane.checkEquals(event.getRightClicked().getUniqueId(), UUID.fromString("196f9e20-1b39-8e09-1543-5abb1ffdefc7"))) {
+                    World world = (World) Bukkit.getWorld("world");
+                    World tempWorld = Bukkit.getWorld("world");
+                    boolean gameRuleSEND_COMMAND_FEEDBACK = tempWorld.getGameRuleValue(GameRule.SEND_COMMAND_FEEDBACK);
+                    boolean gameRuleLOG_ADMIN_COMMANDS = tempWorld.getGameRuleValue(GameRule.LOG_ADMIN_COMMANDS);
+                    tempWorld.setGameRule(GameRule.SEND_COMMAND_FEEDBACK, false);
+                    tempWorld.setGameRule(GameRule.LOG_ADMIN_COMMANDS, false);
+                    event.getPlayer().sendMessage("§bExited Plane");
+                    Bukkit.dispatchCommand(event.getPlayer(), "execute at @e[tag=plane] run tp " + event.getPlayer().getDisplayName() + " ~3 ~ ~3");
+                    Bukkit.dispatchCommand(event.getPlayer(), "execute at " + event.getPlayer().getDisplayName() + " run tag @s remove InPlane");
+                    tempWorld.setGameRule(GameRule.SEND_COMMAND_FEEDBACK, gameRuleSEND_COMMAND_FEEDBACK);
+                    tempWorld.setGameRule(GameRule.LOG_ADMIN_COMMANDS, gameRuleLOG_ADMIN_COMMANDS);
+                }
             }
         }
     private Object entity() {
